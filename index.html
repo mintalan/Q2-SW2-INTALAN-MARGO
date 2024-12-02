@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBMC Science Club</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center">Science Club Registration Form</h1>
+
+        <form>
+            <div class="mb-3 row">
+                <div class="col-md-6">
+                    <label for="inputName" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="inputName" placeholder="Enter your name">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputAge" class="form-label">Age</label>
+                    <input type="number" class="form-control" id="inputAge" placeholder="Enter your age">
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <div class="col-md-6">
+                    <label for="inputEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Enter your email">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputPhoneNumber" class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control" id="inputPhoneNumber" placeholder="Enter your phone number">
+                </div>
+            </div>
+            <p>Preferred Science Topics</p>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="topicEarth">
+                <label class="form-check-label" for="topicEarth">Earth Science</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="topicPhysics">
+                <label class="form-check-label" for="topicPhysics">Physics</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="topicChemistry">
+                <label class="form-check-label" for="topicChemistry">Chemistry</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="topicBiology">
+                <label class="form-check-label" for="topicBiology">Biology</label>
+            </div>
+            <p>Science Experience Level</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="experienceLevel" id="levelBeginner" value="Beginner">
+                <label class="form-check-label" for="levelBeginner">Beginner</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="experienceLevel" id="levelIntermediate" value="Intermediate">
+                <label class="form-check-label" for="levelIntermediate">Intermediate</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="experienceLevel" id="levelAdvanced" value="Advanced">
+                <label class="form-check-label" for="levelAdvanced">Advanced</label>
+            </div>
+            <div class="mb-3">
+                <label for="projectDropdown" class="form-label">Preferred Science Project</label>
+                <select class="form-select" id="projectDropdown">
+                    <option selected>Choose...</option>
+                    <option value="explosive">Explosive</option>
+                    <option value="chemistry">Chemistry-related</option>
+                    <option value="other">Something else</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="inputReason" class="form-label">Statement of Interest</label>
+                <textarea class="form-control" id="inputReason" rows="3" placeholder="Why are you interested in joining the Science Club?"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-cP6EVytZf2Y6e2R7k3GNcsYxFbBg8I1GP95F0ZFgB0GfBsI4lYAxMyCWzjEmb9T4" crossorigin="anonymous"></script>
+</body>
+
+</html>
